@@ -1,0 +1,113 @@
+{
+   "application_title": {
+      "message": "Extensions Manger"
+   },
+   "application_description": {
+      "message": ""
+   },
+   "about": {
+      "message": "About"
+   },
+   "app_disable": {
+      "message": "Diable"
+   },
+   "app_enable": {
+      "message": "Enable"
+   },
+   "appraise": {
+      "message": "5 stars appraise"
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "close": {
+      "message": "Close"
+   },
+   "collect": {
+      "message": "Favorite"
+   },
+   "contact": {
+      "message": "Contact"
+   },
+   "creategroup": {
+      "message": "Create group"
+   },
+   "downloads": {
+      "message": "Downloads"
+   },
+   "extensions": {
+      "message": "Extension"
+   },
+   "feed": {
+      "message": "Feed"
+   },
+   "groupdelete": {
+      "message": "Delete"
+   },
+   "groupmanager": {
+      "message": "Group manager"
+   },
+   "groupmodify": {
+      "message": "Modify"
+   },
+   "groupname": {
+      "message": "Group name"
+   },
+   "groupoperation": {
+      "message": "Group operation"
+   },
+   "grouporder": {
+      "message": "Order"
+   },
+   "history": {
+      "message": "History"
+   },
+   "home": {
+      "message": "Home"
+   },
+   "managerapp": {
+      "message": "Manager apps"
+   },
+   "myapp": {
+      "message": "Apps"
+   },
+   "myext": {
+      "message": "Extensions"
+   },
+   "myfav": {
+      "message": "Favorites"
+   },
+   "mytheme": {
+      "message": "Themes"
+   },
+   "newtab": {
+      "message": "Newtab"
+   },
+   "onekeydisable": {
+      "message": "one key disable"
+   },
+   "onekeyenable": {
+      "message": "one key enable "
+   },
+   "option": {
+      "message": "Option"
+   },
+   "remove_collect": {
+      "message": "Remove"
+   },
+   "run_app": {
+      "message": "Run"
+   },
+   "save": {
+      "message": "Save"
+   },
+   "uninstall": {
+      "message": "Uninstall"
+   },
+   "updatehistory": {
+      "message": "Update history"
+   },
+   "view_site": {
+      "message": "web site"
+   }
+}

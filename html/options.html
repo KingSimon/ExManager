@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link href="/html/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <style  type="text/css">
+        footer {
+            text-align: center;
+            margin-top: 70px;
+            border-top: 1px solid #e5e5e5;
+            background-color: #f5f5f5;
+            padding-top: 20px;
+            padding-bottom: 20px
+        }
+
+        header {
+            margin-top: 50px;
+            text-align: center
+        }
+
+        body {
+            position: relative;
+            padding-top: 40px;
+            min-width: 1000px
+            background-color: #ebeff9
+        }
+
+        .page-header {
+            padding-bottom: 9px;
+            margin: 20px 0 30px;
+            border-bottom: 1px solid rgb(127, 144, 173)
+        }
+
+        section {
+            padding-top: 30px
+        }
+
+        section > .page-header, section > .lead {
+            color: #5a5a5a
+        }
+
+        section > ul li {
+            margin-bottom: 5px
+        }
+
+        .bs-docs-separator {
+            margin: 40px 0 39px
+        }
+
+        .bs-docs-sidenav {
+            width: 228px;
+            margin: 30px 0 0;
+            padding: 0;
+            background-color: #fff;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            border-radius: 6px;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .065)
+        }
+
+        .bs-docs-sidenav > li > a {
+            display: block;
+            width: 190px \9;
+            margin: 0 0 -1px;
+            padding: 8px 14px;
+            border: 1px solid #e5e5e5
+        }
+
+        .bs-docs-sidenav > li:first-child > a {
+            -webkit-border-radius: 6px 6px 0 0;
+            -moz-border-radius: 6px 6px 0 0;
+            border-radius: 6px 6px 0 0
+        }
+
+        .bs-docs-sidenav > li:last-child > a {
+            -webkit-border-radius: 0 0 6px 6px;
+            -moz-border-radius: 0 0 6px 6px;
+            border-radius: 0 0 6px 6px
+        }
+
+        .bs-docs-sidenav > .active > a {
+            position: relative;
+            z-index: 2;
+            padding: 9px 15px;
+            border: 0;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+            -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
+            -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
+            box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1)
+        }
+
+        .bs-docs-sidenav .icon-chevron-right {
+            float: right;
+            margin-top: 2px;
+            margin-right: -6px;
+            opacity: .25
+        }
+
+        .bs-docs-sidenav > li > a:hover {
+            background-color: #f5f5f5
+        }
+
+        .bs-docs-sidenav a:hover .icon-chevron-right {
+            opacity: .5
+        }
+
+        .bs-docs-sidenav .active .icon-chevron-right, .bs-docs-sidenav .active a:hover .icon-chevron-right {
+            background-image: url(../img/glyphicons-halflings-white.png);
+            opacity: 1
+        }
+
+        .bs-docs-sidenav.affix {
+            top: 40px
+        }
+
+        .bs-docs-sidenav.affix-bottom {
+            position: absolute;
+            top: auto;
+            bottom: 270px
+        }
+
+        .gd {
+            line-height: 13px;
+            padding: 3px 20px 3px 5px;
+            margin: 3px 0 3px 5px
+        }
+
+        .sns {
+            margin: 0 0 0 0;
+            top: 490px
+        }
+        .thumbnails{
+            margin-left: 10px;
+        }
+        .span-item{
+            width: 70px;
+            margin-left: 10px !important;
+        }
+        .span-item img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .span-item .label {
+            padding: 0 0;
+            width: 58px;
+            height: 14px;
+            overflow: hidden;
+            text-align: center;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<div id="main-container">
+    <header id="overview">
+        <div class="container">
+            <h1>
+                <img align="bottom" src="/img/logo128.png" style="width:48px;height:48px;"/> <span id="name">{{application_title}}</span>
+            </h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="span3 bs-docs-sidebar">
+                <ul class="nav nav-list bs-docs-sidenav affix">
+                    <li><a href="#group_manager" class="a_page"> <i
+                            class="icon-tasks"></i> <i class="icon-chevron-right"></i><span
+                            class="i_page">{{groupmanager}}</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="span9">
+                <section id="group_manager">
+                    <div class="page-header">
+                        <h2>
+                            <span class="i_page">{{groupmanager}}</span>
+                            <small></small>
+                        </h2>
+                    </div>
+                    <table id="group_manager_table" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th>{{grouporder}}</th>
+                            <th>{{groupname}}</th>
+                            <th>{{managerapp}}</th>
+                            <th>{{groupoperation}}</th>
+                        </tr>
+                        </thead>
+                        <tbody id="group_manager_table_body">
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <button class="btn btn-large" id="createGroup" type="button">创建分组</button>
+                    <div id="create_group_dialog" class="modal hide fade">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h3>{{creategroup}}</h3>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal">
+                                <div class="control-group">
+                                    <label class="control-label" for="inputGroupName">{{groupname}}</label>
+                                    <div class="controls">
+                                        <input type="text" id="inputGroupName" required placeholder="{{groupname}}">
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="inputGorupOrder">{{grouporder}}</label>
+                                    <div class="controls">
+                                        <input type="number" id="inputGorupOrder" required placeholder="{{grouporder}}">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="btn" data-dismiss="modal">{{close}}</a>
+                            <a href="#" class="btn btn-primary" updateId="" id="createGroupSave">{{save}}</a>
+                        </div>
+                    </div>
+                    <div id="managerapp_group_dialog" class="modal hide fade">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h3>{{managerapp}}</h3>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-info">
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                已经收藏的高亮显示<br/>
+                                单击添加/移除收藏
+                            </div>
+                            <ul class="thumbnails" id="show_all_apps_ul">
+                                <li class="span-item">
+                                    <div class="thumbnail">
+                                        <img src="../img/logo128.png" alt="">
+                                        <span class="label" title="一键管理">一键管理</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" class="btn" data-dismiss="modal">{{close}}</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="/js/jquery.js"></script>
+<script src="/html/bootstrap/js/bootstrap.min.js"></script>
+<script src="/js/mustache.js"></script>
+<script src="/js/option.js"></script>
+<script src="/js/db.js"></script>
+</html>
